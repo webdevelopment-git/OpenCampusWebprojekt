@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="361px" height="361px" viewBox="-0.5 -0.5 361 361" style="background-color: rgb(255, 255, 255);">
+<rect x="0" y="0" width="360" height="360" fill="#000000" stroke="none" pointer-events="all"/>
+<ellipse cx="180" cy="120" rx="80" ry="80" fill="#006600" stroke="#006600" pointer-events="all"/>
+<rect x="100" y="120" width="160" height="50" fill="#006600" stroke="#006600" pointer-events="all"/>
+<ellipse cx="180" cy="120" rx="60" ry="60" fill="#000000" stroke="none" pointer-events="all"/>
+<rect x="120" y="120" width="120" height="30" fill="#000000" stroke="none" pointer-events="all"/>
+<rect x="80" y="150" width="200" height="170" fill="#006600" stroke="#006600" pointer-events="all"/>
+<ellipse cx="180" cy="210" rx="30" ry="30" fill="#000000" stroke="none" pointer-events="all"/>
+<rect x="160" y="230" width="40" height="40" fill="#000000" stroke="none" pointer-events="all"/>
+<ellipse cx="180" cy="270" rx="20" ry="20" fill="#000000" stroke="none" pointer-events="all"/>
+</svg>

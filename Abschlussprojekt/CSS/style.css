@@ -16,7 +16,7 @@ main {
     display: flex;
     flex: 1;
     height: 80vh;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border-top: #000000 solid 1px;
 }
@@ -81,6 +81,7 @@ h1 {
 .typeable {
     background-color: #000000;
     border-style: solid;
+    color:#006600;
 }
 
 .clickable {
@@ -100,4 +101,69 @@ a {
 
 em {
     font-style: italic;
+}
+
+input[type="text"] {
+    border: 0;
+    height: 7vh;
+    width: 7vh;
+    font-size: 5vh;
+    text-align: center;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    background: #506050;
+    border-radius: 10px;
+}
+
+td {
+    border: 2px #006600 solid;
+
+}
+
+table {
+    height: fit-content;
+    width: fit-content;
+    border: 8px #006600 solid;
+    margin: 1%;
+}
+
+td:nth-child(3n+0) {
+    border-right: 8px #006600 solid;
+}
+
+td:first-child {
+    border-left: 8px #006600 solid;
+}
+
+tr:nth-child(3n+0) {
+    border-bottom: 8px #006600 solid;
+}
+
+tr:first-child {
+    border-top: 8px #006600 solid;
+}
+
+.controlls {
+    display: flex;
+    flex-direction: column;
+    height: 8vh;
+    justify-content: space-between;
+    width: 15vh;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+}
+
+.labelHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#hardness {
+    margin-top: auto;
 }

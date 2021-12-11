@@ -1,2 +1,8 @@
 75 Minutes - Project layouting
-85 Minuten - First Steps in HTML and CSS
+85 Minutes - First Steps in HTML and CSS
+45 Minutes - Styling LandingPage
+50 Minutes - Creating thumbnails for the subpages
+15 Minutes - Trying to stop prettier from adding whitespaces into self-closing tags
+30 Minutes - HTML for sudoku.html
+50 Minutes - Styling sudoku.html
+40 Minutes - Structuring CSS selectors with attributes class and id, preparing for JS

@@ -1,25 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Landing Page</title>
-        <link rel="shortcut icon" type="image/png" id="favIcon" href="../Images/ThumbnailSudoku.svg"/>
-        <link rel="stylesheet" href="../CSS/reset.css">
-        <link rel="stylesheet" href="../CSS/style.css">
-    </head>
-    <body>
-        <header>
-            <h1 class="font">Sudoku</h1>
-        </header>
-        <main>
-        </main>
-        <footer>
-            <p class="font">This project is open source.</p>
-            <p class="font">The source code can be found on
-                <a href="https://example.com" class="clickable">
-                    GitHub</a>.</p>
-            <p class="font">It was created for a course at 
-                <a href="https://www.opencampus.sh" class="clickable">OpenCampus</a>.</p>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Landing Page</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      id="favIcon"
+      href="../Images/ThumbnailSudoku.svg"
+   />
+    <link rel="stylesheet" href="../CSS/reset.css"/>
+    <link rel="stylesheet" href="../CSS/style.css"/>
+  </head>
+  <body>
+    <header>
+      <h1 class="font">Sudoku</h1>
+    </header>
+    <main>
+      <div class="controlls">
+        <button class="clickable">Generate</button>
+        <input type="range" id="hardness"/>
+        <div class="labelHolder">
+            <p>easy</p>
+            <p>hard</p>
+        </div>
+      </div>
+      <table>
+        <tr>
+          <td><input type="text" id="cell11" class="typeable"/></td>
+          <td><input type="text" id="cell12" class="typeable"/></td>
+          <td><input type="text" id="cell13" class="typeable"/></td>
+          <td><input type="text" id="cell14" class="typeable"/></td>
+          <td><input type="text" id="cell15" class="typeable"/></td>
+          <td><input type="text" id="cell16" class="typeable"/></td>
+          <td><input type="text" id="cell17" class="typeable"/></td>
+          <td><input type="text" id="cell18" class="typeable"/></td>
+          <td><input type="text" id="cell19" class="typeable"/></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="cell21" class="typeable"/></td>
+          <td><input type="text" id="cell22" class="typeable"/></td>
+          <td><input type="text" id="cell23" class="typeable"/></td>
+          <td><input type="text" id="cell24" class="typeable"/></td>
+          <td><input type="text" id="cell25" class="typeable"/></td>
+          <td><input type="text" id="cell26" class="typeable"/></td>
+          <td><input type="text" id="cell27" class="typeable"/></td>
+          <td><input type="text" id="cell28" class="typeable"/></td>
+          <td><input type="text" id="cell29" class="typeable"/></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="cell31" class="typeable"/></td>
+          <td><input type="text" id="cell32" class="typeable"/></td>
+          <td><input type="text" id="cell33" class="typeable"/></td>
+          <td><input type="text" id="cell34" class="typeable"/></td>
+          <td><input type="text" id="cell35" class="typeable"/></td>
+          <td><input type="text" id="cell36" class="typeable"/></td>
+          <td><input type="text" id="cell37" class="typeable"/></td>
+          <td><input type="text" id="cell38" class="typeable"/></td>
+          <td><input type="text" id="cell39" class="typeable"/></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="cell41" class="typeable"/></td>
+          <td><input type="text" id="cell42" class="typeable"/></td>
+          <td><input type="text" id="cell43" class="typeable"/></td>
+          <td><input type="text" id="cell44" class="typeable"/></td>
+          <td><input type="text" id="cell45" class="typeable"/></td>
+          <td><input type="text" id="cell46" class="typeable"/></td>
+          <td><input type="text" id="cell47" class="typeable"/></td>
+          <td><input type="text" id="cell48" class="typeable"/></td>
+          <td><input type="text" id="cell49" class="typeable"/></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="cell51" class="typeable"/></td>
+          <td><input type="text" id="cell52" class="typeable"/></td>
+          <td><input type="text" id="cell53" class="typeable"/></td>
+          <td><input type="text" id="cell54" class="typeable"/></td>
+          <td><input type="text" id="cell55" class="typeable"/></td>
+          <td><input type="text" id="cell56" class="typeable"/></td>
+          <td><input type="text" id="cell57" class="typeable"/></td>
+          <td><input type="text" id="cell58" class="typeable"/></td>
+          <td><input type="text" id="cell59" class="typeable"/></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="cell61" class="typeable"/></td>
+          <td><input type="text" id="cell62" class="typeable"/></td>
+          <td><input type="text" id="cell63" class="typeable"/></td>
+          <td><input type="text" id="cell64" class="typeable"/></td>
+          <td><input type="text" id="cell65" class="typeable"/></td>
+          <td><input type="text" id="cell66" class="typeable"/></td>
+          <td><input type="text" id="cell67" class="typeable"/></td>
+          <td><input type="text" id="cell68" class="typeable"/></td>
+          <td><input type="text" id="cell69" class="typeable"/></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="cell71" class="typeable"/></td>
+          <td><input type="text" id="cell72" class="typeable"/></td>
+          <td><input type="text" id="cell73" class="typeable"/></td>
+          <td><input type="text" id="cell74" class="typeable"/></td>
+          <td><input type="text" id="cell75" class="typeable"/></td>
+          <td><input type="text" id="cell76" class="typeable"/></td>
+          <td><input type="text" id="cell77" class="typeable"/></td>
+          <td><input type="text" id="cell78" class="typeable"/></td>
+          <td><input type="text" id="cell79" class="typeable"/></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="cell81" class="typeable"/></td>
+          <td><input type="text" id="cell82" class="typeable"/></td>
+          <td><input type="text" id="cell83" class="typeable"/></td>
+          <td><input type="text" id="cell84" class="typeable"/></td>
+          <td><input type="text" id="cell85" class="typeable"/></td>
+          <td><input type="text" id="cell86" class="typeable"/></td>
+          <td><input type="text" id="cell87" class="typeable"/></td>
+          <td><input type="text" id="cell88" class="typeable"/></td>
+          <td><input type="text" id="cell89" class="typeable"/></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="cell91" class="typeable"/></td>
+          <td><input type="text" id="cell92" class="typeable"/></td>
+          <td><input type="text" id="cell93" class="typeable"/></td>
+          <td><input type="text" id="cell94" class="typeable"/></td>
+          <td><input type="text" id="cell95" class="typeable"/></td>
+          <td><input type="text" id="cell96" class="typeable"/></td>
+          <td><input type="text" id="cell97" class="typeable"/></td>
+          <td><input type="text" id="cell98" class="typeable"/></td>
+          <td><input type="text" id="cell99" class="typeable"/></td>
+        </tr>
+      </table>
+      <div class="controlls">
+        <button class="clickable">Clear</button>
+        <button class="clickable">Solve</button>
+      </div>
+    </main>
+    <footer>
+      <p class="font">This project is open source.</p>
+      <p class="font">
+        The source code can be found on
+        <a href="https://example.com" class="clickable"> GitHub</a>.
+      </p>
+      <p class="font">
+        It was created for a course at
+        <a href="https://www.opencampus.sh" class="clickable">OpenCampus</a>.
+      </p>
+    </footer>
+  </body>
 </html>

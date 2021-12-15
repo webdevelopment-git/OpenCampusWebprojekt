@@ -19,6 +19,7 @@ main {
     justify-content: center;
     align-items: center;
     border-top: #000000 solid 1px;
+    grid-gap: 20px;
 }
 
 footer {
@@ -41,6 +42,8 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 2em;
+    min-width: 300px;
+    min-height: 300px;
 }
 
 h2 {
@@ -149,8 +152,10 @@ tr:first-child {
     display: flex;
     flex-direction: column;
     height: 8vh;
-    justify-content: space-between;
-    width: 15vh;
+    justify-content: space-around;
+    width: 30vh;
+    min-width: 100px;
+    max-width: 150px;
 }
 
 button {

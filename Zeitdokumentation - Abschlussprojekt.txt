@@ -6,3 +6,14 @@
 30 Minutes - HTML for sudoku.html
 50 Minutes - Styling sudoku.html
 40 Minutes - Structuring CSS selectors with attributes class and id, preparing for JS
+90 Minutes - JavaScript for sudoku.html: Data structures, Controll- and InputListeners
+45 Minutes - JavaScript and planning for sudoku.html: Import and export
+10 Minutes - JavaScript for sudoku.html: Functionality of "Clear" button
+20 Minutes - JavaScript for sudoku.html: isValidRow and isValidColumn, isValidSudoku
+20 Minutes - JavaScript for sudoku.html: isValidGridFrom(row, column)
+30 Minutes - JavaScript for sudoku.html: backtrackSudoku
+90 Minutes - Bughunt in backtrackSudoku
+60 Minutes - Bughunt in backtrackSudoku (supervised programming)
+10 Minutes - Bughunt and bug fixing in backtrackSudoku (added missing parentheses)
+60 Minutes - General code improvements
+80 Minutes - JavaScript for sudoku.html: generateSudoku

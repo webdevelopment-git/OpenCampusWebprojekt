@@ -2,15 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <title>Landing Page</title>
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      id="favIcon"
-      href="../Images/ThumbnailSudoku.svg"
-   />
+    <title>Sudoku</title>
+    <link rel="shortcut icon" type="image/png" id="favIcon" href="../Images/ThumbnailSudoku.svg"/>
     <link rel="stylesheet" href="../CSS/reset.css"/>
     <link rel="stylesheet" href="../CSS/style.css"/>
+    <script src="../JS/interactivity.js"></script>
   </head>
   <body>
     <header>
@@ -18,11 +14,11 @@
     </header>
     <main>
       <div class="controlls">
-        <button class="clickable">Generate</button>
-        <input type="range" id="hardness"/>
+        <button class="clickable" id="generateButton">Generate</button>
+        <input type="range" min="0" max="100" step="1" value="50" id="hardness"/>
         <div class="labelHolder">
-            <p>easy</p>
-            <p>hard</p>
+            <p>few cells</p>
+            <p>many cells</p>
         </div>
       </div>
       <table>
@@ -127,8 +123,9 @@
         </tr>
       </table>
       <div class="controlls">
-        <button class="clickable">Clear</button>
-        <button class="clickable">Solve</button>
+        <button class="clickable" id="clearButton">Clear</button>
+        <button class="clickable" id="verifyButton">Verify</button>
+        <button class="clickable" id="solveButton">Solve</button>
       </div>
     </main>
     <footer>

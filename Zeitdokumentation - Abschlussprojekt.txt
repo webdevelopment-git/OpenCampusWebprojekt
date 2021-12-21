@@ -17,3 +17,4 @@
 10 Minutes - Bughunt and bug fixing in backtrackSudoku (added missing parentheses)
 60 Minutes - General code improvements
 80 Minutes - JavaScript for sudoku.html: generateSudoku
+35 Minutes - Locking cells on generation

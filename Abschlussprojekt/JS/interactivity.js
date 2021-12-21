@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     addInputListeners();
 });
 
-
 let sudoku = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -28,6 +27,8 @@ let fixedNumbers = [
     [false, false, false, false, false, false, false, false, false]
     ]
 
+let lockOnGeneration = false;
+
 function addControllListeners() {
     document.getElementById("clearButton").addEventListener("click", function() {
         deleteAllNumbers();
@@ -51,6 +52,10 @@ function addControllListeners() {
     document.getElementById("generateButton").addEventListener("click", function() {
         generateSudoku();
     });
+    document.getElementById("toggleLock").addEventListener("click", function() {
+        document.getElementById("toggleLock").innerHTML = lockOnGeneration ? "Unlocked on generation" : "Locked on generation";
+        lockOnGeneration = !lockOnGeneration;
+    })
 }
 
 function addInputListeners() {
@@ -70,6 +75,12 @@ function addInputListeners() {
 }
 
 function deleteAllNumbers() {
+    for (let row = 1; row <= 9; row++) {
+        for (let column = 1; column <= 9; column++) {
+            document.getElementById("cell"+row+column).disabled = false;
+            document.getElementById("cell"+row+column).style.fontWeight = "normal";
+        }
+    }
     for (let row = 1; row <= 9; row++) {
         for (let column = 1; column <= 9; column++) {
             document.getElementById("cell"+row+column).value = "";
@@ -214,4 +225,15 @@ function generateSudoku() {
         }
     }
     exportNumbers();
+    if (lockOnGeneration) {
+        for (let row = 1; row <= 9; row++) {
+            for (let column = 1; column <= 9; column++) {
+                let cell = document.getElementById("cell"+row+column);
+                if (cell.value !== "") {
+                    cell.disabled = true;
+                    cell.style.fontWeight = "bold";
+                }
+            }
+        }
+    }
 }
